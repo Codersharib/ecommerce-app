@@ -23,16 +23,17 @@
 
 ## 📸 Screenshots
 
-<!-- Add your screenshots to a docs/ folder and uncomment these lines:
+| Home | Search |
+|------|--------|
+| ![Home](docs/home.png) | ![Search](docs/search.png) |
 
-| Home | Product page |
-|------|--------------|
-| ![Home](docs/home.png) | ![Product](docs/product.png) |
+| Product page | Cart |
+|--------------|------|
+| ![Product](docs/product.png) | ![Cart](docs/cart.png) |
 
-| Cart | Add / Update product |
-|------|----------------------|
-| ![Cart](docs/cart.png) | ![Add product](docs/add-product.png) |
--->
+| Add product |
+|-------------|
+| ![Add product](docs/add-product.png) |
 
 ## ✨ Features
 
