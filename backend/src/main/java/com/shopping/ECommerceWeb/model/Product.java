@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Generated;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -24,14 +26,17 @@ public class Product {
     private BigDecimal price;
     private String category;
 
-//    @JsonFormat(shape= JsonFormat.Shape.STRING,pattern="yyyy-MM-dd")
+    //    @JsonFormat(shape= JsonFormat.Shape.STRING,pattern="yyyy-MM-dd")
     private Date releaseDate;
     private boolean available;
     private int stockQuantity;
 
     private String imageName;
     private String imageType;
-    @Lob
+    //    @Lob
+//    private byte[] imageData;
+    @JdbcTypeCode(SqlTypes.VARBINARY)
+    @Column(length = 10_000_000)
     private byte[] imageData;
 
 }
